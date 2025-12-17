@@ -1,0 +1,115 @@
+{
+  "CompileTimeErrors": [
+    {
+      "name": "syntax error",
+      "meaning": "Code structure is invalid.",
+      "reason": "Missing semicolons, braces, or incorrect statements.",
+      "analogy": "Writing a sentence with broken grammar.",
+      "fix": "Check semicolons, braces, and correct syntax."
+    },
+    {
+      "name": "invalid conversion",
+      "meaning": "Cannot convert one type to another.",
+      "reason": "Assigning incompatible types or casting incorrectly.",
+      "analogy": "Pouring juice into a solid container.",
+      "fix": "Use correct type conversion or casting."
+    },
+    {
+      "name": "no matching function",
+      "meaning": "Function call does not match any definition.",
+      "reason": "Wrong parameters or function signature mismatch.",
+      "analogy": "Ordering a coffee size that doesn’t exist.",
+      "fix": "Check function name and parameter types."
+    },
+    {
+      "name": "redefinition error",
+      "meaning": "A variable, function, or class is defined multiple times.",
+      "reason": "Duplicate definitions in code.",
+      "analogy": "Giving two houses the same address.",
+      "fix": "Remove duplicate definitions."
+    },
+    {
+      "name": "undefined reference",
+      "meaning": "Linker cannot find the function or variable.",
+      "reason": "Function declared but not defined.",
+      "analogy": "Address given but house not built.",
+      "fix": "Provide definition for all declared functions and variables."
+    }
+  ],
+  "RuntimeErrors": [
+    {
+      "name": "Segmentation fault",
+      "meaning": "Invalid memory access.",
+      "reason": "Accessing memory that is not allocated.",
+      "analogy": "Entering someone else’s locked house.",
+      "fix": "Check pointers and memory allocation."
+    },
+    {
+      "name": "std::bad_alloc",
+      "meaning": "Memory allocation failed.",
+      "reason": "Heap memory exhausted.",
+      "analogy": "No space left in cupboard.",
+      "fix": "Free unused memory or optimize memory usage."
+    },
+    {
+      "name": "std::out_of_range",
+      "meaning": "Container index is out of valid range.",
+      "reason": "Accessing vector, string, or array with invalid index.",
+      "analogy": "Picking a page beyond the book’s total pages.",
+      "fix": "Check container size before accessing."
+    },
+    {
+      "name": "Floating point exception",
+      "meaning": "Invalid arithmetic operation occurred.",
+      "reason": "Division by zero or invalid float calculation.",
+      "analogy": "Dividing apples among zero people.",
+      "fix": "Check arithmetic operations."
+    }
+  ],
+  "LogicalErrors": [
+    {
+      "name": "Wrong output",
+      "meaning": "Program executes but gives incorrect results.",
+      "reason": "Incorrect logic or algorithm implementation.",
+      "analogy": "Following wrong directions to a place.",
+      "fix": "Review and correct algorithm."
+    },
+    {
+      "name": "Infinite loop",
+      "meaning": "Loop never ends.",
+      "reason": "Loop condition never becomes false.",
+      "analogy": "Walking in a circle forever.",
+      "fix": "Fix loop condition."
+    },
+    {
+      "name": "Incorrect algorithm",
+      "meaning": "Algorithm does not solve the problem correctly.",
+      "reason": "Logic or steps are incorrect.",
+      "analogy": "Using a wrong map to reach destination.",
+      "fix": "Use the correct algorithm."
+    }
+  ],
+  "MemoryErrors": [
+    {
+      "name": "Memory leak",
+      "meaning": "Allocated memory not freed.",
+      "reason": "Memory allocated dynamically is not released.",
+      "analogy": "Leaving tap open forever and wasting water.",
+      "fix": "Use delete or free() to release memory."
+    },
+    {
+      "name": "Dangling pointer",
+      "meaning": "Pointer refers to memory that has been freed.",
+      "reason": "Accessing pointer after delete/free.",
+      "analogy": "Using a remote control for a broken TV.",
+      "fix": "Set pointer to NULL after freeing memory."
+    },
+    {
+      "name": "Heap corruption",
+      "meaning": "Memory on heap is overwritten or invalid.",
+      "reason": "Accessing memory out of bounds or double-free.",
+      "analogy": "Messing up storage boxes and losing items.",
+      "fix": "Check heap allocations and avoid invalid access."
+    }
+  ]
+}
